@@ -8,4 +8,4 @@ phases:
   build:
     commands:
       - echo "This is CI/CD Sample Project"
-      - ls -lart $CODEBUILD_SRC_DIR
+      - ls -lart $CODEBUILD_SRC_DIR/dags
