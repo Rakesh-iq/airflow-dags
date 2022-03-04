@@ -9,4 +9,4 @@ phases:
     commands:
       - echo "This is CI/CD Sample Project"
       - ls -lart $CODEBUILD_SRC_DIR/dags/*
-      - aws s3 sync $CODEBUILD_SRC_DIR/dags/ s3://$dev_s3_bucket_dags
+      - aws s3 sync $CODEBUILD_SRC_DIR/dags/ $dev_s3_bucket_dags
