@@ -9,4 +9,4 @@ phases:
     commands:
       - echo "This is CI/CD Sample Project"
       - ls -lart $CODEBUILD_SRC_DIR/dags/*
-      - aws s3 cp $CODEBUILD_SRC_DIR/dags/* s3://iqpoc-airflow-dag/airflow/dags/
+      - aws s3 sync $CODEBUILD_SRC_DIR/dags/* s3://iqpoc-airflow-dag/airflow/dags/
