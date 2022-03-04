@@ -2,11 +2,11 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - npm install
+  # install:
+  #   commands:
+  #     - npm install
   build:
     commands:
       - echo "This is CI/CD Sample Project"
       - ls -lart $CODEBUILD_SRC_DIR/dags/*
-      - aws s3 sync $CODEBUILD_SRC_DIR/dags/ s3://iqpoc-airflow-dag/airflow/dags/ --request-payer requester
+      - aws s3 sync $CODEBUILD_SRC_DIR/dags/ s3://$dev_s3_bucket_dags
