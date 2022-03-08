@@ -19,7 +19,7 @@ default_args = {
     # 'schedule_interval': '*/5 * * * *'
 }
 
-with DAG(dag_id='simple_bash_dag_to_create_move_file',
+with DAG(dag_id='simple_bash_dag',
     default_args=default_args,  
     schedule_interval=timedelta(days=1),
     tags=['my_dags'],

@@ -15,7 +15,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 dag = DAG(
-    'simple_demo',
+    'test_dag',
     default_args=default_args,
     description='A simple DAG with a few Python tasks.',
     schedule_interval=timedelta(days=1),
